@@ -1,0 +1,699 @@
+body{
+	background: #f7f6f2;
+	font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;
+}
+hr{
+	-webkit-margin-before: 0.3em;
+    -webkit-margin-after: 0.3em;
+}
+
+
+/*导航条*/
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-default{
+	background: #fff;
+}
+
+/*搜索框*/
+.search{
+	display: block;
+	width: 100px;
+	height: 26px;
+	position: absolute;
+	top: 10px;
+	border-radius: 13px;
+}
+
+.name{
+	display: block;
+	width: 20px;
+	height: 10px;
+}
+
+#top-right li{
+	display: block;
+	width: 55px;
+	height: 60px;
+}
+
+#top-right li:hover{
+	background: #fafafa;
+}
+
+ /*导航条显示的面板和下拉菜单*/
+ .dropdown-menu{
+ 	min-width: 125px;
+ }
+
+ .dropdown-menu .font{
+ 	display: inline-block;
+ 	width: 20px;
+ 	height: 10px;
+ 	position: relative;
+ 	left: 15px;
+ }
+
+#tool{
+	position: relative;
+	left: 87%;
+	top: 60px;
+	z-index: 10;	
+}
+#tasks{
+	position: relative;
+	left: 90%;
+	top: 60px;
+	z-index: 10;	
+}
+
+/*面板1*/
+#panel1{
+	display: block;
+	width: 300px;
+	height: 310px;
+	position: relative;
+	left: 84.2%;
+	top: 60px;
+	z-index: 10;
+}
+#panel1 .panel-body{
+	padding: 0px;
+	box-sizing: border-box;
+}
+#panel1 .panel-body a{
+	display: inline-block;
+	text-decoration: none;
+	width: 149px;
+	height: 35px;
+	color: #000;
+	font-size: 13px;
+	line-height: 35px;
+	float: left;
+	border-bottom:2px solid rgb(238,238,283); 
+}
+#panel1 .panel-body .active{
+	/*background: rgb(250,250,250);*/
+	color: #000;
+	font-weight: 900;
+	border-bottom:2px solid rgb(153,153,153);
+}
+#panel1 .panel-body a:hover{
+	background: rgb(250,250,250);
+}
+/*徽章*/
+.badge{
+	background: rgb(247,82,136);
+}
+
+/*面板2*/
+#panel2{
+	display: block;
+	width: 480px;
+	height: 400px;
+	position: relative;
+	left: 74.8%;
+	top: 60px;
+	z-index: 10;
+}
+#panel2 .panel-body{
+	padding: 0px;
+	box-sizing: border-box;
+}
+#panel2 .panel-body .project{
+	display: inline-block;	
+	width: 360px;
+	height: 398px;
+	border-right: 1px solid rgb(221,221,221); 
+}
+#panel2 .panel-body .dropdown-menu{
+	display: inline-block;	
+	min-width: 118px;
+	height: 396px;
+	position: absolute;
+	top: -0.4%;
+	left: 360px;
+	box-shadow: none;
+}
+#panel2 .panel-body .project .head{
+	display: block;
+	width: 360px;
+	height: 20px;
+	margin-top: 10px;
+}
+#panel2 .panel-body .project .head .glyphicon-cog{
+	display: block;
+	position: absolute;
+	left: 335px;
+	top: 10px;
+}
+#panel2 .panel-body .project .body{
+	display: block;
+	width: 360px;
+	height: 200px;
+	margin-top: 80px;
+	padding: 30px;
+}
+
+/*左侧面的工具栏*/
+.toolbar{
+	width: 80px;
+	height: 916px;
+	background: #333333;
+	position: absolute;
+	top: 60px;
+	position: fixed;
+}
+
+.toolbar a{
+	display: block;
+	width: 80px;
+	height: 60px;
+	color: #e5e5e5;
+	font-size: 15px;
+	padding: 10px;
+	text-decoration: none;			/*去掉下划线*/
+}
+.toolbar a:hover{
+	color:#fffffe;
+	background: #474747;
+}
+.toolbar .active{
+	color:#fffffe;
+	background: #5c5c5c;
+}	
+.glyphicon{
+	position: relative;
+	left: 10px;
+}
+
+
+/*<!-- 工具栏每个工具的页面 -->*/
+.tool-page{
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 80px;
+}
+/*home页*/
+.tool-page .home-page{
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-bottom: 50px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.tool-page .home-page .my-project{
+	display: block;
+	width: 1120px;
+	height: 295px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	background: #fff;
+	float: left;	
+}
+.tool-page .home-page .my-project .head .tool{
+	font-size: 14px;
+	float: right;
+}
+.tool-page .home-page .my-project .head .tool a{
+	text-decoration: none;
+	color: #333333;
+}
+
+
+
+.tool-page .home-page .my-change{
+	display: block;
+	width: 1120px;
+	height: 800px;
+	margin-right: 25px;
+	background: #fff;
+	float: left;	
+}
+.tool-page .home-page .my-change .nav{
+	font-size: 14px;
+}
+.tool-page .home-page .my-change .nav a{
+	text-decoration: none;
+	color: #333333;
+}
+.tool-page .home-page .my-change .nav .active{
+	font-weight: 700;
+}
+
+
+.tool-page .home-page .my-tasks{
+	display: block;
+	width: 615px;
+	height: 700px;
+	background: #fff;
+	position: absolute;
+	left: 1160px;
+	top: 30px;
+}
+
+/*项目页*/
+.tool-page .project-page .project-list{
+	width: 200px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .project-page .project-list .head{
+	width: 198px;
+	height: 310px;
+	padding: 30px 25px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.tool-page .project-page .project-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .project-page .project-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .project-page .project-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .project-page .project-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .project-page .project-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .project-page .project-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .project-page .project-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .project-page .project-list .mid{
+	width: 198px;
+	height: 100px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 25px 10px;
+}
+.tool-page .project-page .project-list .bottom{
+	width: 198px;
+	padding: 10px 25px 10px;
+}
+
+/*内容*/
+.tool-page .project-page .project-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 260px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+
+/*任务页*/
+.tool-page .all-page .all-list{
+	width: 230px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .all-page .all-list .head{
+	width: 230px;
+	height: 280px;
+	padding: 30px 25px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.tool-page .all-page .all-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .all-page .all-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .all-page .all-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .all-page .all-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .all-page .all-list .head .nav .label{
+	display: block;
+	background: #3ebe77;
+	cursor: pointer;
+	width: 80px;
+	height: 25px;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 14px;
+}
+.tool-page .all-page .all-list .head .nav .label:hover{
+	background: #2eb06f;
+}
+.tool-page .all-page .all-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .all-page .all-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .all-page .all-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .all-page .all-list .mid{
+	width: 198px;
+	height: 100px;
+	padding: 10px 25px 10px;
+}
+/*内容*/
+.tool-page .all-page .all-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 290px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+
+/*团队页*/
+.tool-page .friends-page .friends-list{
+	width: 240px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .friends-page .friends-list .head{
+	width: 230px;
+	height: 280px;
+	padding: 30px 25px 10px;
+}
+.tool-page .friends-page .friends-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .friends-page .friends-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .friends-page .friends-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .friends-page .friends-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+
+/*内容*/
+.tool-page .friends-page .friends-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 290px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+
+/*好友页*/
+.tool-page .goodFriends-page .goodFriends-list{
+	width: 200px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .goodFriends-page .goodFriends-list .head{
+	width: 198px;
+	height: 200px;
+	padding: 30px 25px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.tool-page .goodFriends-page .goodFriends-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .goodFriends-page .goodFriends-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .goodFriends-page .goodFriends-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .goodFriends-page .goodFriends-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .goodFriends-page .goodFriends-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .goodFriends-page .goodFriends-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .goodFriends-page .goodFriends-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .goodFriends-page .goodFriends-list .mid{
+	width: 198px;
+	height: 100px;
+	padding: 10px 25px 10px;
+}
+
+/*内容*/
+.tool-page .goodFriends-page .goodFriends-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 260px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/*通知页*/
+.tool-page .comment-page .comment-list{
+	width: 200px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .comment-page .comment-list .head{
+	width: 198px;
+	height: 200px;
+	padding: 30px 25px 10px;
+}
+.tool-page .comment-page .comment-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .comment-page .comment-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .comment-page .comment-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .comment-page .comment-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .comment-page .comment-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .comment-page .comment-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .comment-page .comment-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .comment-page .comment-list .mid{
+	width: 198px;
+	height: 100px;
+	padding: 10px 25px 10px;
+}
+
+/*内容*/
+.tool-page .comment-page .comment-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 260px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.tool-page .comment-page .comment-content .box-label{
+	display: block;
+	float: right;
+}
+.tool-page .comment-page .comment-content .box-label .label{
+	border-radius: 13px;
+}
+
+
+/*私信页*/
+.tool-page .envelope-page .envelope-list{
+	width: 200px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .envelope-page .envelope-list .head{
+	width: 198px;
+	height: 200px;
+	padding: 30px 25px 10px;
+}
+.tool-page .envelope-page .envelope-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .envelope-page .envelope-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .envelope-page .envelope-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .envelope-page .envelope-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .envelope-page .envelope-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .envelope-page .envelope-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .envelope-page .envelope-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .envelope-page .envelope-list .mid{
+	width: 198px;
+	height: 100px;
+	padding: 10px 25px 10px;
+}
+
+/*内容*/
+.tool-page .envelope-page .envelope-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 260px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.tool-page .envelope-page .envelope-content .box-label{
+	display: block;
+	float: right;
+}
+.tool-page .envelope-page .envelope-content .box-label .label{
+	border-radius: 13px;
+}
+
+
+
+/*账户页*/
+.tool-page .tree-page .tree-list{
+	width: 200px;
+	height: 970px;
+	border: 1px solid #ccc;
+}
+.tool-page .tree-page .tree-list .head{
+	width: 198px;
+	height: 350px;
+	padding: 30px 25px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.tool-page .tree-page .tree-list .head p{
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tool-page .tree-page .tree-list .head .head-header{
+	font-size: 18px;
+	font-weight: 700;
+}
+.tool-page .tree-page .tree-list .head .head-header .glyphicon{
+	float: right;
+}
+.tool-page .tree-page .tree-list .font{
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+	position: relative;
+	left: 15px;
+}
+.tool-page .tree-page .tree-list a{
+	color: rgba(0,0,0,.45);
+}
+.tool-page .tree-page .tree-list a:hover{
+	color: rgba(0,0,0,0.65);
+}
+.tool-page .tree-page .tree-list .active{
+	color: rgba(0,0,0,0.95);
+}
+.tool-page .tree-page .tree-list .mid{
+	width: 198px;
+	height: 100px;
+	padding: 10px 25px 10px;
+}
+
+/*内容*/
+.tool-page .tree-page .tree-content{
+	display: block;
+	width: 1520px;
+	height: 34px;
+	position: absolute;
+	left: 260px;
+	top: 30px;	
+	border-bottom: 1px solid rgb(223,222,218);
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}

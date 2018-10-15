@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/dsall.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<title>生成音乐</title>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/UtfToGbk.js') }}"></script>
+	<script type="text/javascript">
+
+	    function startAuto(){
+			$('#loading').removeClass('hide').addClass('show');
+	    	var Url = 'http://111.231.107.140:5000/run_auto';
+	    	var epochs = $('#input1').val();
+	    	var batch_size = $('#input2').val();
+	    	var lr = $('#input3').val();
+			var data = {
+				'epochs':epochs,
+				'batch_size':batch_size,
+				'lr':lr
+			};
+			console.log(data);
+			$.post(Url, data, function(data, textStatus, xhr) {
+				$('#loading').removeClass('show').addClass('hide');
+				console.log(data);
+				alert(data.msg);
+			});
+	    }
+
+	    function startGan(){
+			$('#loading').removeClass('hide').addClass('show');
+	    	var Url = 'http://111.231.107.140:5000/run_gan';
+	    	var epochs = $('#_input1').val();
+	    	var batch_size = $('#_input2').val();
+	    	var g_lr = $('#_input3').val();
+	    	var d_lr = $('#_input4').val();
+			var data = {
+				'epochs':epochs,
+				'batch_size':batch_size,
+				'g_lr':g_lr,
+				'd_lr':d_lr
+			};
+			console.log(data);
+			$.post(Url, data, function(data, textStatus, xhr) {
+				$('#loading').removeClass('show').addClass('hide');
+				console.log(data);
+				alert(data.msg);
+			});
+	    }
+
+		function getMusic_Auto(){
+			var url = 'http://111.231.107.140:5000/download_auto';
+		    //定义一个form表单,通过form表单来发送请求
+		    var form=$("<form>");
+
+		    //设置表单状态为不显示
+		    form.attr("style","display:none");
+
+		    //method属性设置请求类型为get
+		    form.attr("method","get");
+
+		    //action属性设置请求路径,(如有需要,可直接在路径后面跟参数)
+		    //例如:htpp://127.0.0.1/test?id=123
+		    form.attr("action",url);
+
+		    //将表单放置在页面(body)中
+		    $("body").append(form);
+
+		    //表单提交
+		    form.submit();
+		}
+
+		function getMusic_Gan(){
+			var url = 'http://111.231.107.140:5000/download_gan';
+		    //定义一个form表单,通过form表单来发送请求
+		    var form=$("<form>");
+
+		    //设置表单状态为不显示
+		    form.attr("style","display:none");
+
+		    //method属性设置请求类型为get
+		    form.attr("method","get");
+
+		    //action属性设置请求路径,(如有需要,可直接在路径后面跟参数)
+		    //例如:htpp://127.0.0.1/test?id=123
+		    form.attr("action",url);
+
+		    //将表单放置在页面(body)中
+		    $("body").append(form);
+
+		    //表单提交
+		    form.submit();
+		}
+
+		function toAuto(){
+			$('.auto_music').removeClass('hide').addClass('show');
+			$('.gan_music').removeClass('show').addClass('hide');	
+
+			$('.creat_music_auto').addClass('active');
+			$('.creat_music_gan').removeClass('active');
+					
+		}
+		function toGan(){
+			$('.gan_music').removeClass('hide').addClass('show');
+			$('.auto_music').removeClass('show').addClass('hide');	
+
+			$('.creat_music_gan').addClass('active');
+			$('.creat_music_auto').removeClass('active');
+		}
+
+	</script>
+
+</head>
+<body>
+
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="creat_music_auto active" onclick="toAuto()"><a href="#">music_creat_auto</a></li>
+  <li role="presentation" class="creat_music_gan" onclick="toGan()"><a href="#">music_creat_gan</a></li>
+</ul>
+
+<div class="row auto_music">
+	<div class="col-md-12">
+		<div class="well well-lg">
+			<div class="alert alert-info" role="alert">
+				生成音乐-autoencoder
+				<div id="test_info"></div>
+			</div>
+			<form class="col-md-12">
+				<div class="well well-lg">
+					<div class="alert alert-info" role="alert">参数设置</div>
+				  	<div class="form-group">
+				    	<label for="input1">训练次数</label>
+				    	<input type="text" class="form-control" id="input1" placeholder="256">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="input1">批大小</label>
+				    	<input type="text" class="form-control" id="input2" placeholder="64">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="input1">学习率</label>
+				    	<input type="text" class="form-control" id="input3" placeholder="0.005">
+				  	</div>
+				  	
+				</div>
+			</form>
+
+			<div style="margin-right: 100px;margin-top: 15px">
+			  	<button type="button" class="btn btn-default" onclick="startAuto()">开始生成</button>
+			  	<button type="button" class="btn btn-default" onclick="getMusic_Auto()">音乐下载</button>
+			  	
+			</div>
+	  	</div>
+	</div>
+</div>
+<div class="row gan_music hide">
+	<div class="col-md-12">
+		<div class="well well-lg">
+			<div class="alert alert-info" role="alert">
+				生成音乐-AE_GAN
+				<div id="test_info"></div>
+			</div>
+			<form class="col-md-12">
+				<div class="well well-lg">
+					<div class="alert alert-info" role="alert">参数设置</div>
+				  	<div class="form-group">
+				    	<label for="input1">训练次数</label>
+				    	<input type="text" class="form-control" id="_input1" placeholder="32">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="input1">批大小</label>
+				    	<input type="text" class="form-control" id="_input2" placeholder="64">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="input1">生成器学习率</label>
+				    	<input type="text" class="form-control" id="_input3" placeholder="0.0002">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="input1">判别器学习率</label>
+				    	<input type="text" class="form-control" id="_input4" placeholder="0.0003">
+				  	</div>
+				</div>
+			</form>
+
+			<div style="margin-right: 100px;margin-top: 15px">
+			  	<button type="button" class="btn btn-default" onclick="startGan()">开始生成</button>
+			  	<button type="button" class="btn btn-default" onclick="getMusic_Gan()">音乐下载</button>
+			  	
+			</div>
+	  	</div>
+	</div>
+</div>
+
+
+<div id="loading" class="hide">
+	<div id="loading-center">
+		<div id="loading-center-absolute">
+			<div class="object" id="object_four"></div>
+			<div class="object" id="object_three"></div>
+			<div class="object" id="object_two"></div>
+			<div class="object" id="object_one"></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+b,strong{
+	font-weight: 700;
+}
+ul li{
+	list-style-type: none;
+}
+ul{
+	padding: 0;
+}
+
+body{
+	margin:0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: none;
+}
+
+/*导航条开始**************************************/
+.navbar-inverse{
+	background: rgba(34,34,34,0.68);
+	transition: background 1s;
+}
+.navbar-inverse:hover{
+	background: rgba(34,34,34,1);
+}
+
+/*导航条结束**************************************/
+
+
+
+/*首页开始**************************************/
+.wyBox{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.fp-tableCell{
+	vertical-align: top;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	position: absolute;
+	margin: -2px 0px 0px -2px;
+	border: 0px;
+	left: 50%;
+	top: 50%;
+	width: 4px;
+	height: 4px;
+	background: #fff;
+
+}
+#fp-nav ul li a:hover span, .fp-slidesNav ul li a:hover span{   
+	width: 10px;
+	height: 10px;
+	margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+	width: 12px;
+	height: 12px;
+	margin: -6px 0px 0px -6px;
+	border-radius: 100%;
+	background: #fff;
+}
+
+
+
+/*首页home开始*****************/
+#home{
+	padding-top: 70px;
+	background: url(../images/1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#home h1{
+	font-size: 63px;
+	font-weight: bold;
+}
+#home p{
+	margin-bottom: 15px;
+	font-size: 21px;
+	font-weight: 200;
+}
+#home .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+/*首页home结束*****************/
+
+/*首页news开始*****************/
+#news{
+	padding-top: 70px;
+	background: url(../images/2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#news .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#news h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+#news .table-striped>tbody>tr:nth-of-type(odd){				/*奇数*/
+	background: #ddd;
+}
+#news .table-striped>tbody>tr:nth-of-type(even){			/*偶数*/
+	background: #eee;
+}
+/*首页news结束*****************/
+
+/*首页chart开始*****************/
+#chart{
+	padding-top: 70px;
+	background: url(../images/4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#chart .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#chart h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+#chart #chartInfo{
+	display: block;
+	width: 90%;
+	height: 440px;
+	position: relative;
+	left: 5%;
+}
+#chart #chartInfo .chartSmallBox{
+	display: block;
+	width: 23%;
+	height: 200px;
+	margin-left: 2%;
+	margin-top: 20px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+#chart #chartInfo .chartSmallBox img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#chart #chartInfo .chartSmallBox p{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.23);
+	transition: background 0.3s linear;
+}
+#chart #chartInfo .chartSmallBox:hover p{
+	background: rgba(0,0,0,0.56);
+}
+
+#chart #chartInfo .chartSmallBox div.chartIntroShow{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 50%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	transition: bottom 0.3s linear;
+}
+#chart #chartInfo .chartSmallBox div.chartIntroHide{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: -10%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	transition: bottom 0.3s linear;
+}
+#chart #chartInfo .chartSmallBox:hover div.chartIntroShow{
+	bottom: 60%;
+}
+#chart #chartInfo .chartSmallBox:hover div.chartIntroHide{
+	bottom: 30%;
+}
+
+/*首页readme结束*****************/
+
+/*首页readme开始*****************/
+#readme{
+	padding-top: 70px;
+	background: url(../images/3.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#readme .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#readme h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+/*首页readme结束*****************/
+
+/*首页usehelp开始*****************/
+#usehelp{
+	padding-top: 70px;
+	background: url(../images/4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#usehelp .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#usehelp .fp-controlArrow.fp-prev{
+	left: 77px;
+	transition: left 0.3s ease;
+}
+#usehelp .fp-controlArrow.fp-prev:hover{
+	left: 70px;
+}
+#usehelp .fp-controlArrow.fp-next{
+	right: 77px;
+	transition: right 0.3s ease;
+}
+#usehelp .fp-controlArrow.fp-next:hover{
+	right: 70px;
+}
+/*首页usehelp结束*****************/
+
+/*首页download开始*****************/
+#download{
+	padding-top: 70px;
+	background: url(../images/1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#download .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#download .wy_box ul{
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+#download .wy_box ul li{
+	display: block;
+	width: 22%;
+	height: 30px;
+	position: relative;
+	margin-right: 3%;
+	float: left;
+	margin-top: 20px;
+	background: rgba(0,0,0,0.68);
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+	transition: background 0.3s linear;
+}
+#download .wy_box ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+#download .wy_box ul li:hover{
+	background: rgba(0,0,0,1);
+}
+/*首页download结束*****************/
+
+/*首页qq开始*****************/
+#qq{
+	padding-top: 70px;
+	background: url(../images/1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#qq .wy_box{
+	height: 600px;
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#qq .wy_box #weChatImg{
+	display: block;
+	width: 35%;
+	height: 400px;
+	margin-top: 20px;
+	float: left;
+	position: relative;
+}
+#qq .wy_box #weChatImg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#qq .wy_box #qqInfo{
+	display: block;
+	width: 50%;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 5%;
+	float: left;
+	position: relative;
+}
+#qq .wy_box #qqInfo .panel-heading h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*首页qq结束*****************/
+
+/*首页regpay开始*****************/
+#regpay{
+	padding-top: 70px;
+	background: url(../images/3.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#regpay .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+#regpay #regpayInfo{
+	display: block;
+	width: 100%;
+	height: 440px;
+}
+#regpay #regpayInfo .regpayCard{
+	display: block;
+	border: 2px #fff solid;
+	border-radius: 10px;
+	width: 22%;
+	height: 200px;
+	margin-top: 20px;
+	margin-right: 3%;
+	float: left;
+	background: rgba(0,0,0,0.68);
+	color: #fff;
+	font-weight: bold;
+	padding-left: 2%;
+	padding-right: 2%;
+	cursor: pointer;
+	transition: border 0.3s linear,background 0.3s linear,color 0.3s linear;
+}
+#regpay #regpayInfo .regpayCard .cardName{
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	border-bottom: 2px #fff solid;
+	text-align: center;
+	line-height: 50px;
+	transition: border-bottom 0.3s linear;
+}
+#regpay #regpayInfo .regpayCard .cardLastCost{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: line-through;
+}
+#regpay #regpayInfo .regpayCard .cardNowCost{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 40px;
+}
+#regpay #regpayInfo .regpayCard .cardUseTime{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 40px;
+}
+#regpay #regpayInfo .regpayCard:hover{
+	border: 2px #000 solid;
+	background: rgba(255,255,255,0.68);
+	color: #000;
+}
+#regpay #regpayInfo .regpayCard:hover .cardName{
+	border-bottom: 2px #000 solid;
+}
+/*首页regpay结束*****************/
+
+/*首页buyticket开始*****************/
+#buyticket{
+	padding-top: 70px;
+	background: url(../images/4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+#buyticket .wy_box{
+	background-color: rgba(233,233,233,0.1);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	padding: 20px 40px 70px 40px;
+	font-size: 14px;
+}
+/*首页buyticket结束*****************/
+
+
+
+
+
+/*首页结束**************************************/

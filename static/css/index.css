@@ -1,0 +1,235 @@
+b,strong{
+	font-weight: 700;
+}
+ul li{
+	list-style-type: none;
+}
+ul{
+	padding: 0;
+}
+html{
+	overflow: scroll;
+	overflow-x: hidden;
+}
+body{
+	margin:0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #f2f5f9;
+}
+
+/*导航条开始**************************************/
+.navbar-inverse{
+	background: rgba(34,34,34,0.88);
+	transition: background 1s;
+}
+.navbar-inverse:hover{
+	background: rgba(34,34,34,1);
+}
+#wyHead{
+	width: 70%;
+}
+/*导航条结束**************************************/
+
+
+
+/*首页开始**************************************/
+.fp-tableCell{
+	vertical-align: top;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	position: absolute;
+	margin: -2px 0px 0px -2px;
+	border: 0px;
+	left: 50%;
+	top: 50%;
+	width: 4px;
+	height: 4px;
+	background: #fff;
+
+}
+#fp-nav ul li a:hover span, .fp-slidesNav ul li a:hover span{   
+	width: 10px;
+	height: 10px;
+	margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+	width: 12px;
+	height: 12px;
+	margin: -6px 0px 0px -6px;
+	border-radius: 100%;
+	background: #fff;
+}
+
+
+
+/*首页home开始*****************/
+#home{
+	display: block;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 70px;
+	background-color: rgba(233,233,233,0.1);
+}
+
+
+/*showNews开始*********************/
+#home #showNews{
+
+}
+/*showNews结束*********************/
+
+
+/*imgAndDownload开始*********************/
+#home #imgAndDownload{
+	display: block;
+	width: 100%;
+	height: 500px;
+	padding: 0;
+	position: relative;
+}
+#home #imgAndDownload .wrap {
+	display: block;
+	height: 100%;
+	margin: 0 auto; 
+	position: relative;
+}
+
+#home #imgAndDownload #softwareDownload{
+	display: block;
+	position: absolute;
+	top: 30%;
+	right: 7%;
+	width: 180px;
+	height: 180px;
+	background: rgba(0,0,0,0.68);
+	cursor: pointer;
+	padding: 30px;
+	z-index: 100;
+	transition: background 0.3s linear;
+}
+#home #imgAndDownload #softwareDownload p{
+	display: block;
+	font-size: 13px;
+	margin-bottom: 20px;
+	color: rgba(255,255,255,0.68);
+	z-index: 100;
+	transition: color 0.3s linear;
+}
+#home #imgAndDownload #softwareDownload:hover{
+	background: rgba(0,0,0,1);
+}
+#home #imgAndDownload #softwareDownload:hover p{
+	color: rgba(255,255,255,1);
+}
+.fader .pager_list{
+	top: 460px;
+}
+.fader .prev, .fader .next{
+	top: 250px;
+}
+/*imgAndDownload结束*********************/
+
+/*软件公告和动态*/
+#home #softWareInfo{
+	display: block;
+	position: absolute;
+	width: 70%;
+	top: 680px;
+	left: 15%;
+}
+#home #softWareInfo #softNews{
+	display: block;
+	width: 47%;
+	float: left;
+}
+#home #softWareInfo #softNotice{
+	display: block;
+	width: 47%;
+	margin-left: 6%;
+	float: left;
+}
+
+/*软件特色*/
+#home #softWareInfo #softChart{
+	display: block;
+	width: 100%;
+	float: left;
+}
+#home #softWareInfo #softChart #chartInfo{
+	display: block;
+	width: 90%;
+	height: 440px;
+	position: relative;
+	left: 5%;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox{
+	display: block;
+	width: 23%;
+	height: 200px;
+	margin-left: 2%;
+	margin-top: 20px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox p{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.23);
+	transition: background 0.3s linear;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox:hover p{
+	background: rgba(0,0,0,0.56);
+}
+
+#home #softWareInfo #softChart #chartInfo .chartSmallBox div.chartIntroShow{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 50%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	transition: bottom 0.3s linear;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox div.chartIntroHide{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: -10%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	transition: bottom 0.3s linear;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox:hover div.chartIntroShow{
+	bottom: 60%;
+}
+#home #softWareInfo #softChart #chartInfo .chartSmallBox:hover div.chartIntroHide{
+	bottom: 30%;
+}
+
+/*首页结束**************************************/
+
+
+/*footer*/
+#footer{
+	display: block;
+	width: 100%;
+	height: 200px;
+	float: left;
+}

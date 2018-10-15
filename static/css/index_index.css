@@ -1,0 +1,117 @@
+form input,input[type=text],input[type=password]
+{
+	margin-top: 10px; 
+	height: 50px;
+}
+input[type=text]
+{
+	height: 28px;
+	border-radius: 6px;
+}
+#sign_up-1,#log_in-1
+{
+	background-color: white;
+	box-shadow:inset 1px -1px 1px 	#444,inset -1px 1px 1px #444;
+	margin-top:4%;
+ 	border-radius:10px;
+	padding: 20px 40px 40px;
+	min-width:500px;
+	max-width:600px;
+}
+#navheader ul li a button
+{
+	margin-top: 0px;
+	border-radius: 20px;
+	width: 90px;
+}
+body:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
+body{
+	background-image: url(nuaa2.jpeg);
+	background-repeat: no-repeat;	
+	position:absolute;
+	background-image: 100%;
+	width: 100%;
+	height: 100%;
+	min-width: 790px;
+}
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#wrap{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position: relative; 
+}
+#con{
+	padding-bottom: 60px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	clear: both;
+}
+#navheader
+{
+	background-color: white;
+	height: 56px;
+}
+#textp
+{
+	text-align: center;
+}
+input[type=submit]{
+	background-color: #ABABAB;
+	border-radius:40px;
+}
+input[type=checkbox]{
+
+    position: absolute;
+    width: 1.1em;
+    height: 1.1em;
+    outline: 0;
+}
+.checkbox{
+	padding-left: 5px;
+	width: auto;
+	width: 100%;
+}
+
+.rem-find{
+	position: relative;
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+a{	   
+	  font-size: 12px;
+    color: rgba(255,255,255,.5);
+    margin-right: 15px;
+}
+form,form a{
+	color: rgba(34,34,45,.6);
+	font-size: 1em;
+}
+label:hover {
+    color: rgba(0,0,0,.8);
+}
+div .bottom-link{
+	margin-top: 15px;
+	text-align: center;
+}
+.tooltip{
+	display: inline;
+	width: 140px;
+}
